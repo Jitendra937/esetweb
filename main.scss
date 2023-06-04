@@ -1,0 +1,337 @@
+// global style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+li {
+    list-style: none;
+}
+
+// typography
+body {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Bitter', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+// variable of colors
+$blue: #5243C2;
+$pink: #EF0178;
+$grey: #0C111F;
+$black: #1D1B1B;
+$white: #FFFFFF;
+
+$primary: $blue;
+$secondary: $pink;
+$tertiotary: $grey;
+
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bitter', serif;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 55px;
+
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+}
+
+h6 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+// button css
+button {
+    background-color: $primary;
+    border-radius: 8px;
+    padding: 17px 30px;
+    white-space: nowrap;
+
+    a {
+        color: $white;
+        font-size: 18px;
+    }
+}
+
+// hero banner css
+.hero-banner {
+    margin-bottom: 60px;
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .left-content {
+            padding: 20px 50px;
+
+            .higlight-text {
+                color: $secondary;
+            }
+
+            p {
+                margin: 20px;
+                line-height: 40px;
+            }
+        }
+
+        .right-content {
+            width: 40%;
+        }
+    }
+}
+
+// our client css
+.our-client {
+    margin-bottom: 50px;
+
+    .text {
+        text-align: center;
+        line-height: 30px;
+
+        h4 {
+            margin-bottom: 20px;
+            color: $secondary;
+        }
+
+        h3 {
+            line-height: 40px;
+        }
+    }
+
+    .partner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0;
+
+        .partner-media {
+            padding-left: 8px;
+        }
+
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+// another banner css
+.another-banner {
+    margin-bottom: 50px;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-content {
+            padding-left: 40px;
+
+            .higlight-text {
+                color: $primary;
+            }
+
+            p {
+                padding: 20px 200px 20px 0;
+                line-height: 30px;
+            }
+
+            li {
+                position: relative;
+                line-height: 35px;
+                padding-left: 30px;
+            }
+
+            li::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 8px;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                background-image: url('./media/image\ 11.png');
+                background-size: cover;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+// our service css
+.our-service {
+    text-align: center;
+    .icon-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon {
+            padding: 40px 10px;
+            .box {
+                margin-left: 45px;
+                margin-bottom: 20px;
+                height: 100px;
+                width: 100px;
+                background-color: #5243C2;
+                border-radius: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 20%;
+                    height: 20%;
+                }
+            }
+        }
+    }
+}
+// hire card css
+.hire-card{
+    .row{
+        padding: 40px;
+        border-radius: 15px;
+        color: $white;
+        background-color: $primary;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left-content{
+            padding: 80px;
+        }
+        .right-content{
+            padding: 80px;
+            button{
+                background-color: $secondary;
+            }
+        }
+    }
+}
+// our price css
+.our-price{
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .card-wrap{
+        display: flex;
+        justify-content: space-around;
+        .price-card{
+           width: 250px;
+        }
+    }
+}
+// footer css
+.site-footer {
+    padding: 50px 0;
+    background-color: $tertiotary;
+
+    .footer-text {
+        text-align: center;
+        color: $white;
+        padding: 25px 5px;
+        line-height: 60px;
+    }
+
+    .row {
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        input {
+            background-color: $tertiotary;
+            color: $white;
+            margin-right: 20px;
+            padding: 20px 80px;
+        }
+    }
+
+    .bottom-content {
+        margin-top: 70px;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+
+            .menu {
+                display: flex;
+
+                li {
+                    padding: 0 20px;
+
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:576px) {}
+@media (min-width:576px) {}
+@media (min-width:576px) {}
+
+@media (min-width:768px) {}
+
+@media (min-width:992px) {}
