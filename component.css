@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container .card-wrap {
+  margin-top: 200px;
+}
+
+li {
+  list-style: none;
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card-wrap .card {
+  color: white;
+  width: 250px;
+  padding: 20px;
+  background-color: #5243C2;
+  border-radius: 19px;
+}
+.card-wrap .card .top-text {
+  display: flex;
+  justify-content: right;
+}
+.card-wrap .card .top-text h6 {
+  color: #F496D1;
+  background-color: #180b7b;
+  display: inline-block;
+  text-align: right;
+  padding: 4px 8px;
+  border-radius: 14px;
+}
+
+ul {
+  padding: 20px 0;
+}
+ul li {
+  position: relative;
+  padding: 4px 0 4px 30px;
+}
+ul li::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  align-items: center;
+}
+
+.card .button {
+  text-align: center;
+  padding: 10px 0;
+}
+.card .button button {
+  background-color: #EF0178;
+  padding: 10px 30px;
+  border-radius: 22px;
+}
+.card .button button a {
+  color: white;
+  text-decoration: none;
+}
+
+.card h2 {
+  padding: 5px 0;
+}
+.card h1 {
+  padding: 5px 0;
+}
+.card p {
+  padding: 5px 0;
+}/*# sourceMappingURL=component.css.map */
